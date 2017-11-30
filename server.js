@@ -33,11 +33,11 @@ router.route('/profile').get(function (req, res) {
 app.use('/api', router);
 
 mongoose.connect('mongodb://localhost/ProfileDb', {
-    useMongoClient: true
+  useMongoClient: true
 }, function (err, db) {
-    if (!err) {
-        console.log("We're connected to Mongo");
-    }
+  if (!err) {
+    console.log("We're connected to Mongo");
+  }
 });
 
 
